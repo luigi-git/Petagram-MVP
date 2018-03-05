@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/vertical_margin"
+    card_view:cardCornerRadius="@dimen/corner_card_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mascotas"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde">
+
+            <ImageButton
+                android:id="@+id/btnRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlanco"
+                android:src="@drawable/dog_bone_icon"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvNombreMascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/tamanio_texto"
+                android:layout_centerHorizontal="true"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/horizontal_margin"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/horizontal_padding"
+                    android:text="@string/rating_inicial"
+                    android:textSize="@dimen/tamanio_texto"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/imgRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dog_bone_icon_rating"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/borde">
+
+            <ImageButton
+                android:id="@+id/btnRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBlanco"
+                android:src="@drawable/dog_bone_icon"/>
+
+            <TextView
+                android:id="@+id/tvNombreMascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="@string/app_name"
+                android:textSize="@dimen/tamanio_texto"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/rating_inicial"
+                android:textSize="@dimen/tamanio_texto"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/imgRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/dog_bone_icon_rating"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout-->
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

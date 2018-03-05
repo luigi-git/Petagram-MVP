@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="rating_inicial">0</string>
+
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acerca_de">Acerca De</string>
+    <string name="menu_favoritos">Mascotas Favoritas</string>
+
+    <string name="app_version">Versión 1.0</string>
+    <string name="app_descripcion">Petagram es una aplicación para los amantes de los animales.</string>
+    <string name="dominio">petagram.luigi.com</string>
+    <string name="derechos">© 2018 Luigi Co.</string>
+
+    <string name="msj_contacto_1">Completa el siguiente formulario y envíanos un mensaje.</string>
+    <string name="msj_contacto_2">Tus comentarios, preguntas y sugerencias son importantes para nosotros.</string>
+
+    <string name="hint_input_nombre_completo">Nombre completo</string>
+    <string name="hint_input_correo_electronico">Correo electrónico</string>
+    <string name="hint_input_mensaje">Mensaje</string>
+
+    <string name="label_btn_enviar">Enviar mensaje</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

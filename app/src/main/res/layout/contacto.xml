@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luigi.petagram.Contacto">
+
+    <include
+        android:id="@+id/miActionBar"
+        layout="@layout/actionbar">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/miActionBar"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivPetagram"
+                android:layout_width="@dimen/tamanio_logo"
+                android:layout_height="@dimen/tamanio_logo"
+                android:src="@drawable/petagram"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msj_contacto_2"
+                    android:layout_marginHorizontal="@dimen/horizontal_margin"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msj_contacto_1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="@dimen/horizontal_margin"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/HintText">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputNombreCompleto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tamanio_texto"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColor="@color/textoInput"
+                android:hint="@string/hint_input_nombre_completo" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/HintText">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputCorreoElectronico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tamanio_texto"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/textoInput"
+                android:hint="@string/hint_input_correo_electronico" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/HintText">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tamanio_texto"
+                android:inputType="textMultiLine"
+                android:textColor="@color/textoInput"
+                android:hint="@string/hint_input_mensaje"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:textColor="@color/colorBlanco"
+            android:theme="@style/Boton"
+            android:text="@string/label_btn_enviar"
+            android:onClick="enviarMensaje"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

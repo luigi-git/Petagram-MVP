@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vertical_margin">15dp</dimen>
+    <dimen name="horizontal_margin">15dp</dimen>
+
+    <dimen name="vertical_padding">10dp</dimen>
+    <dimen name="horizontal_padding">5dp</dimen>
+
+    <dimen name="corner_card_radius">4dp</dimen>
+    <dimen name="elevacion_action_bar">4dp</dimen>
+
+    <dimen name="tamanio_texto">15sp</dimen>
+
+    <dimen name="tamanio_logo">100dp</dimen>
+
+</resources>

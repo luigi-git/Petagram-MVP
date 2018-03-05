@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luigi.petagram.AcercaDe">
+
+        <include
+            android:id="@+id/miActionBar"
+            layout="@layout/actionbar">
+        </include>
+
+        <LinearLayout
+            android:layout_below="@id/miActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivPetagram"
+                android:layout_width="@dimen/tamanio_logo"
+                android:layout_height="@dimen/tamanio_logo"
+                android:src="@drawable/petagram"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/vertical_margin"
+                android:text="@string/app_version"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dominio"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/derechos"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_descripcion"
+                android:layout_margin="@dimen/vertical_margin"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+</RelativeLayout>
